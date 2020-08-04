@@ -12,6 +12,10 @@
   background-size: cover;
 
   .call-to-action {
+    background-color: whitesmoke;
+    box-shadow: $shadow;
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     margin-top: 300px;

@@ -7,7 +7,7 @@ import Logo from "../assets/images/square_logo.jpg";
 
 const NavBar = () => {
   return (
-    <div className="navbar couleur">
+    <div className="navbar">
       <div className="logo-content">
         <div className="logo">
           <img src={Logo} alt="Logo" />
