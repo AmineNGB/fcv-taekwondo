@@ -3,52 +3,47 @@ import { NavLink } from "react-router-dom";
 
 // import Css files and pictures
 import "../assets/App.css";
-import Logo from "../assets/images/square_logo.jpg";
+import Fist from "../assets/images/fist.svg";
 
 const NavBar = () => {
   return (
     <div className="navbar">
-      <div className="logo-content">
-        <div className="logo">
-          <img src={Logo} alt="Logo" />
-          <h3>FCV Taekwondo</h3>
+      <div className="logo">
+        <div className="logo-content">
+          <img src={Fist} alt="Logo" />
         </div>
       </div>
       <div className="navigation">
         <ul>
           <li>
             <NavLink exact to="/" activeClassName="navActive">
+              <i className="fas fa-home"></i>
               <span>Accueil</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/leclub" activeClassName="navActive">
-              <span>Le club</span>
+              <i class="fas fa-fist-raised"></i>
+              <span>Notre club</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/entraineurs" activeClassName="navActive">
-              <span>Entraineurs</span>
+              <i class="fas fa-users"></i>
+              <span>Nos entraineurs</span>
             </NavLink>
           </li>
-          <li>
-            <NavLink exact to="/gallery" activeClassName="navActive">
-              <span>Galerie</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/tarifs" activeClassName="navActive">
-              <span>tarifs</span>
-            </NavLink>
-          </li>
+
           <li>
             <NavLink exact to="/horaires" activeClassName="navActive">
-              <span>Horaires</span>
+              <i class="fas fa-clock"></i>
+              <span>Nos horaires</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/contact" activeClassName="navActive">
-              <span>Contact</span>
+              <i class="fas fa-phone"></i>
+              <span>Nous contacter</span>
             </NavLink>
           </li>
         </ul>

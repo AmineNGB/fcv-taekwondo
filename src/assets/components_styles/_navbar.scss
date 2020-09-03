@@ -1,35 +1,66 @@
 .navbar {
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: space-between;
-  background-color: whitesmoke;
-  box-shadow: $shadow;
+  width: 200px;
+  height: 460px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 1fr 108px;
+  grid-template-areas:
+    "1"
+    "2";
 
-  .logo-content {
-    display: flex;
-    .logo {
-      margin: 10px;
-      display: flex;
-      align-items: center;
+  .logo {
+    grid-area: 1;
+    text-align: center;
+    user-select: none;
+    position: relative;
+
+    .logo-content {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+
       img {
-        border-radius: 50%;
-        height: 100px;
-      }
-      h3 {
-        margin-left: 10px;
+        width: 100px;
       }
     }
   }
   .navigation {
-    display: flex;
+    grid-area: 2;
+    padding: 2rem 1rem;
+
     ul {
-      display: flex;
-      align-items: center;
-      padding-right: 50px;
+      height: 100%;
+      display: grid;
+
       li {
-        display: inline;
-        margin: 10px;
+        list-style: none;
+        padding: 2rem 0 1rem 0.4rem;
+        font-size: 1.3rem;
+        position: relative;
+
+        &:hover i {
+          transform: translate(3px, 3px);
+        }
+
+        a {
+          color: #000;
+        }
+        .navActive {
+          border-bottom: solid;
+        }
+
+        i {
+          position: absolute;
+          font-size: 0.95rem;
+          transform: translateY(3px);
+          transition: 0.2s ease;
+        }
+        span {
+          margin-left: 2.7rem;
+        }
       }
     }
   }

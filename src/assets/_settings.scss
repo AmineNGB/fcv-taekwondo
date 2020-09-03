@@ -5,17 +5,11 @@ $font-1: "Roboto mono", monospace;
 $font-2: "Dosis", sans-serif;
 $font-3: "Josefin Sans", serif;
 
-$color-1: #0a090f;
-$color-2: #d0d0d2;
-$color-3: rgb(99, 164, 233);
-$color-4: #4fedd2;
-$color-5: red;
 $white: #ffffff;
 $black: #110f20;
 
 $borderRadius: 12px;
 $shadow: 0 1px 3px #333;
-$minHeight: 95vh;
 
 @mixin verticalCenter {
   display: flex;
@@ -29,6 +23,4 @@ $minHeight: 95vh;
 }
 body {
   max-width: 1848px;
-  font-family: $font-1;
-  color: $black;
 }

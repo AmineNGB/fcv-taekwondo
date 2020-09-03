@@ -1,26 +1,26 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import kick from "../assets/images/kick.svg";
+import fond from "../assets/images/fondhome.svg";
 
 const Home = () => {
   return (
-    <div className="home">
-      <NavBar />
-      <div className="call-to-action">
-        <h1>FCV Taekwondo</h1>
-        <h2>Plus qu'un club, une famille</h2>
-        <p>
-          Tu veux faire un sport qui t'enseignes le respect ? Rejoins nous !
-        </p>
-        <p>La première séance est gratuite !</p>
-
-        <a class="learn-more" href="#/leclub">
-          <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
-          </span>
-          <span class="button-text"> En savoir plus</span>
-        </a>
+    <>
+      <div className="main-section">
+        {/* <img id="kick" src={kick} alt="test" /> */}
+        <div className="fond-circle">
+          <img id="fond" src={fond} alt="test" />
+        </div>
       </div>
-    </div>
+      {/* <h1>F.C.V Taekwondo</h1>
+        <i class="fas fa-quote-right"></i>
+        <h2>Plus qu'un simple club, une grande famille</h2>
+        <i class="fas fa-quote-left"></i>
+        <p>N’hésitez plus, faites votre premier entrainement gratuitement.</p>
+        <button id="join-us">Rejoinez-nous !</button> */}
+
+      {/* <NavBar /> */}
+    </>
   );
 };
 
