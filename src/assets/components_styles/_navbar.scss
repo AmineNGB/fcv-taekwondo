@@ -1,8 +1,9 @@
 .navbar {
-  width: 200px;
-  height: 460px;
   position: relative;
+
   display: grid;
+  width: 400px;
+
   grid-template-columns: 1fr;
   grid-template-rows: 250px 1fr 108px;
   grid-template-areas:
@@ -11,15 +12,14 @@
 
   .logo {
     grid-area: 1;
-    text-align: center;
     user-select: none;
     position: relative;
 
     .logo-content {
       position: absolute;
       bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      right: 0;
+      transform: translateX(50%);
       width: 100%;
 
       img {
@@ -28,12 +28,14 @@
     }
   }
   .navigation {
+    align-items: center;
     grid-area: 2;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 
     ul {
       height: 100%;
       display: grid;
+      text-align: end;
 
       li {
         list-style: none;
@@ -54,12 +56,12 @@
 
         i {
           position: absolute;
-          font-size: 0.95rem;
+          font-size: 1.45rem;
           transform: translateY(3px);
           transition: 0.2s ease;
         }
         span {
-          margin-left: 2.7rem;
+          margin-right: 1.7rem;
         }
       }
     }

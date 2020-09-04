@@ -1,13 +1,109 @@
-.main-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.application {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  .main-section {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
 
-  .fond-circle {
-    background-color: red;
+    #kick {
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      left: 564px;
+      top: 137px;
+    }
+    #fond {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: -335px;
+    }
+    .call-to-action {
+      position: absolute;
+      #title-fcv {
+        position: absolute;
+        width: 215px;
+        height: 115px;
+        left: 127px;
+        top: 80px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 115px;
+
+        color: #ffffff;
+      }
+
+      #sentence-fcv {
+        position: absolute;
+        width: 280px;
+        height: 44px;
+        left: 136px;
+        top: 439px;
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: #ffffff;
+      }
+
+      #hesitate {
+        position: absolute;
+        width: 480px;
+        height: 44px;
+        left: 136px;
+        top: 639px;
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #ffffff;
+      }
+      #join-us {
+        /* Frame 1 */
+
+        /* Auto Layout */
+        display: flex;
+        flex-direction: row;
+        padding: 10px 20px;
+
+        position: absolute;
+        width: 164px;
+        height: 42px;
+        left: 136px;
+        top: 720px;
+        border: none;
+        border-radius: 8px;
+
+        background: #366af0;
+
+        /* Rejoignez-nous */
+
+        position: absolute;
+        width: 160px;
+        height: 42px;
+        left: 140px;
+        bottom: 50px;
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        color: #ffffff;
+      }
+    }
   }
 }

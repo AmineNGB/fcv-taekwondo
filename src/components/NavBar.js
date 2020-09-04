@@ -17,34 +17,34 @@ const NavBar = () => {
         <ul>
           <li>
             <NavLink exact to="/" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Accueil</span>
+              <span>Accueil </span>
             </NavLink>
+            <i className="fas fa-home"></i>
           </li>
           <li>
-            <NavLink exact to="/leclub" activeClassName="navActive">
-              <i class="fas fa-fist-raised"></i>
+            <NavLink exact to="/notreclub" activeClassName="navActive">
               <span>Notre club</span>
             </NavLink>
+            <i class="fas fa-fist-raised"></i>
           </li>
           <li>
-            <NavLink exact to="/entraineurs" activeClassName="navActive">
-              <i class="fas fa-users"></i>
-              <span>Nos entraineurs</span>
+            <NavLink exact to="/nosentraineurs" activeClassName="navActive">
+              <span>Nos entraineurs </span>
             </NavLink>
+            <i class="fas fa-users"></i>
           </li>
 
           <li>
-            <NavLink exact to="/horaires" activeClassName="navActive">
-              <i class="fas fa-clock"></i>
+            <NavLink exact to="/noshoraires" activeClassName="navActive">
               <span>Nos horaires</span>
             </NavLink>
+            <i class="fas fa-clock"></i>
           </li>
           <li>
             <NavLink exact to="/contact" activeClassName="navActive">
-              <i class="fas fa-phone"></i>
               <span>Nous contacter</span>
             </NavLink>
+            <i class="fas fa-phone"></i>
           </li>
         </ul>
       </div>
