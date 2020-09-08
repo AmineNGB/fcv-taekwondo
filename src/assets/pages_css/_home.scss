@@ -1,12 +1,20 @@
 .application {
+  width: 100%;
+  height: 100%;
   display: flex;
   .main-section {
     height: 100vh;
     position: relative;
     width: 100%;
     top: 0;
-    left: 0;
-
+    left: 100px;
+    #fond {
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: -335px;
+    }
     #kick {
       position: absolute;
       width: 800px;
@@ -14,28 +22,22 @@
       left: 564px;
       top: 137px;
     }
-    #fond {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: -335px;
-    }
+
     .call-to-action {
       position: absolute;
+      font-family: Lato;
+      font-style: normal;
+      color: white;
       #title-fcv {
         position: absolute;
         width: 215px;
         height: 115px;
         left: 127px;
         top: 80px;
-        font-family: Lato;
-        font-style: normal;
+
         font-weight: 900;
         font-size: 96px;
         line-height: 115px;
-
-        color: #ffffff;
       }
 
       #sentence-fcv {
@@ -44,14 +46,9 @@
         height: 44px;
         left: 136px;
         top: 439px;
-
-        font-family: Lato;
-        font-style: normal;
         font-weight: 900;
         font-size: 24px;
         line-height: 29px;
-
-        color: #ffffff;
       }
 
       #hesitate {
@@ -60,23 +57,12 @@
         height: 44px;
         left: 136px;
         top: 639px;
-
-        font-family: Lato;
-        font-style: normal;
         font-weight: 900;
         font-size: 18px;
         line-height: 22px;
-
-        color: #ffffff;
       }
       #join-us {
-        /* Frame 1 */
-
-        /* Auto Layout */
-        display: flex;
-        flex-direction: row;
-        padding: 10px 20px;
-
+        padding: 10px 15px;
         position: absolute;
         width: 164px;
         height: 42px;
@@ -84,25 +70,17 @@
         top: 720px;
         border: none;
         border-radius: 8px;
-
         background: #366af0;
-
-        /* Rejoignez-nous */
-
-        position: absolute;
-        width: 160px;
-        height: 42px;
-        left: 140px;
-        bottom: 50px;
-
-        font-family: Lato;
-        font-style: normal;
         font-weight: 900;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
-        /* identical to box height */
-
-        color: #ffffff;
+        color: white;
+      }
+      #join-us:hover {
+        transform: scale(1.05);
+        border: 1px solid white;
+        cursor: pointer;
+        transition: 0.3s all;
       }
     }
   }

@@ -1,12 +1,9 @@
 // we import all scss file needed !
 
 @import "./settings";
-@import "./pages/about";
-@import "./pages/home";
-@import "./pages/contact";
-@import "./pages/gallery";
-@import "./pages/notfound";
-@import "./pages/tarifs";
-@import "./pages/trainers";
+@import "./pages_css/home";
+@import "./pages_css/contact";
+@import "./pages_css/notfound";
+@import "./pages_css/trainers";
 
 @import "./components_styles/navbar";

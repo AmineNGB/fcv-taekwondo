@@ -1,5 +1,5 @@
 .navbar {
-  position: relative;
+  // position: relative;
 
   display: grid;
   width: 400px;
@@ -16,13 +16,15 @@
     position: relative;
 
     .logo-content {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      transform: translateX(50%);
-      width: 100%;
+      //
 
       img {
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+        transform: translateX(50%);
+        width: 100%;
         width: 100px;
       }
     }
@@ -45,13 +47,19 @@
 
         &:hover i {
           transform: translate(3px, 3px);
+          color: blue;
         }
 
         a {
           color: #000;
+          text-decoration: none;
         }
         .navActive {
           border-bottom: solid;
+          color: blue;
+        }
+        .navActive i {
+          color: blue;
         }
 
         i {

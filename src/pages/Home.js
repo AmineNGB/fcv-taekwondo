@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import kick from "../assets/images/kick.svg";
 import fond from "../assets/images/fondhome.svg";
 import Contact from "./Contact";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -22,9 +23,9 @@ const Home = () => {
             <p id="hesitate">
               N’hésitez plus, faites votre premier entrainement gratuitement.
             </p>
-            <button src={Contact} id="join-us">
-              Rejoignez-nous !
-            </button>
+            <NavLink exact to="/contact">
+              <button id="join-us">Rejoignez-nous !</button>
+            </NavLink>
           </div>
         </div>
 
