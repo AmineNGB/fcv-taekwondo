@@ -2,7 +2,6 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import kick from "../assets/images/kick.svg";
 import fond from "../assets/images/fondhome.svg";
-import Contact from "./Contact";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {

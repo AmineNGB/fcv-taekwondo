@@ -1,0 +1,49 @@
+.navbar-xs {
+  width: 100px;
+  height: 100vh;
+  background-color: $black;
+
+  .navigation-xs {
+    ul {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin-bottom: 3.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        padding: 2rem 0 1rem 0.4rem;
+        font-size: 1.3rem;
+        position: relative;
+
+        &:hover i {
+          transform: translate(3px, 3px);
+          color: $blue;
+        }
+
+        a {
+          color: $white;
+          text-decoration: none;
+
+          margin-bottom: 1rem;
+        }
+        .navActive {
+          color: $blue;
+        }
+        .navActive i {
+          color: $blue;
+          border-bottom: 1px solid $blue;
+        }
+
+        i {
+          font-size: 1.45rem;
+          padding-bottom: 0.5rem;
+          transform: translateY(3px);
+          transition: 0.2s ease;
+        }
+      }
+    }
+  }
+}
