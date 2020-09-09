@@ -9,42 +9,40 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <div className="logo-content">
-          <img src={Fist} alt="Logo" />
-        </div>
+        <img src={Fist} alt="Logo" />
       </div>
       <div className="navigation">
         <ul>
           <li>
             <NavLink exact to="/" activeClassName="navActive">
               <span>Accueil </span>
+              <i className="fas fa-home"></i>
             </NavLink>
-            <i className="fas fa-home"></i>
           </li>
           <li>
             <NavLink exact to="/notreclub" activeClassName="navActive">
               <span>Notre club</span>
+              <i class="fas fa-fist-raised"></i>
             </NavLink>
-            <i class="fas fa-fist-raised"></i>
           </li>
           <li>
             <NavLink exact to="/nosentraineurs" activeClassName="navActive">
               <span>Nos entraineurs </span>
+              <i class="fas fa-users"></i>
             </NavLink>
-            <i class="fas fa-users"></i>
           </li>
 
           <li>
             <NavLink exact to="/noshoraires" activeClassName="navActive">
               <span>Nos horaires</span>
+              <i class="fas fa-clock"></i>
             </NavLink>
-            <i class="fas fa-clock"></i>
           </li>
           <li>
             <NavLink exact to="/contact" activeClassName="navActive">
               <span>Nous contacter</span>
+              <i class="fas fa-phone"></i>
             </NavLink>
-            <i class="fas fa-phone"></i>
           </li>
         </ul>
       </div>

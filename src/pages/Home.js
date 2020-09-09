@@ -27,7 +27,6 @@ const Home = () => {
             </NavLink>
           </div>
         </div>
-
         <NavBar />
       </div>
     </>

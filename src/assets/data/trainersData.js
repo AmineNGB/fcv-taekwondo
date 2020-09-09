@@ -9,15 +9,29 @@ export const trainersData = [
   {
     id: 2,
     name: "Maître Duong Thao",
-    picture: "./media/amir.jpg",
+    picture: "./media/thao.jpg",
     description:
       "thao sfsdfsdfs f sdf sdf sdf sf sd sf sf ffsfsfsf s df zsef zf zef dfze d",
   },
   {
     id: 3,
-    name: "ludivine",
-    picture: "./media/maitre.jpg",
+    name: "Amir",
+    picture: "./media/amir.jpg",
     description:
-      "ludivine sfsdfsdfs f sdf sdf sdf sf sd sf sf ffsfsfsf s df zsef zf zef dfze d",
+      "amir sfsdfsdfs f sdf sdf sdf sf sd sf sf ffsfsfsf s df zsef zf zef dfze d",
+  },
+  {
+    id: 4,
+    name: "Mohamed-Wassim aka BMW",
+    picture: "./media/bmw.jpg",
+    description:
+      "amir sfsdfsdfs f sdf sdf sdf sf sd sf sf ffsfsfsf s df zsef zf zef dfze d",
+  },
+  {
+    id: 5,
+    name: "Ludivine",
+    picture: "./media/ludivine.jpg",
+    description:
+      "amir sfsdfsdfs f sdf sdf sdf sf sd sf sf ffsfsfsf s df zsef zf zef dfze d",
   },
 ];
