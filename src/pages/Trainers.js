@@ -14,9 +14,13 @@ export default class Trainers extends Component {
     return (
       <>
         <div className="coachs">
+          <h2 className="trainer-title">F.C.V Taekwondo / Les entraineurs</h2>
+
           <div className="trainers">
             {coach.map((item) => {
-              return <Coach key={item.id} item={item} />;
+              return (
+                <Coach key={item.id} item={item} className={item.cardClass} />
+              );
             })}
           </div>
           <NavBarXs />

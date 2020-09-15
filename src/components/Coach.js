@@ -12,10 +12,10 @@ export default class Coach extends Component {
   };
 
   render() {
-    const { name, picture } = this.props.item;
+    const { name, picture, cardClass } = this.props.item;
 
     return (
-      <div className="card-trainer">
+      <div className={cardClass}>
         <img className="card-img" src={picture} alt="" />
         <h3 className="card-name">{name}</h3>
       </div>

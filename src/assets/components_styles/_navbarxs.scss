@@ -1,7 +1,8 @@
 .navbar-xs {
   width: 100px;
-  height: 100vh;
+  height: 100%;
   background-color: $black;
+  grid-area: navbar-xs;
 
   .navigation-xs {
     ul {

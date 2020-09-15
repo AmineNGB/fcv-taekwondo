@@ -1,24 +1,39 @@
 .coachs {
   display: grid;
   grid-template-columns: 1fr 100px;
+  grid-template-rows: 50px 1fr;
   grid-column-gap: 20px;
   width: 100%;
-  height: 100vh;
+  grid-template-areas:
+    "trainer-title navbar-xs"
+    "trainers navbar-xs";
+  // height: 100%;
+
+  h2 {
+    margin: 1rem;
+  }
 
   .trainers {
     margin: 20px;
+    // height: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      " trainer-title  card-1 card-2 ."
+      "card-3 card-4 card-5 card-6";
     grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
 
-    .card-trainer {
+    .card-1 {
+      grid-area: card-1;
       cursor: pointer;
       background: white;
       border-radius: 20px;
-
       text-align: center;
       width: 100%;
-      height: 550px;
+      height: 100%;
       box-shadow: $shadow;
       grid-template-rows: 80% 20%;
       grid-template-areas:
@@ -32,6 +47,176 @@
         @include verticalCenter;
         justify-content: center;
         margin-top: 40px;
+      }
+      img {
+        grid-area: 1;
+        object-fit: cover;
+        margin: 0 auto;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px 20px 0 0;
+        @include verticalCenter;
+      }
+    }
+    .card-2 {
+      grid-area: card-2;
+      cursor: pointer;
+      width: 100%;
+      height: 650px;
+      background: white;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: $shadow;
+      grid-template-rows: 80% 20%;
+      grid-template-areas:
+        "1"
+        "2";
+      h3 {
+        grid-area: 2;
+        font-family: $font-2;
+        color: black;
+        font-size: 1.65rem;
+        @include verticalCenter;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      img {
+        grid-area: 1;
+        object-fit: cover;
+        margin: 0 auto;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px 20px 0 0;
+        @include verticalCenter;
+      }
+    }
+    .card-3 {
+      margin: auto;
+      grid-area: card-3;
+      cursor: pointer;
+      background: white;
+      border-radius: 20px;
+      text-align: center;
+      width: 70%;
+      height: 500px;
+      box-shadow: $shadow;
+      grid-template-rows: 80% 20%;
+      grid-template-areas:
+        "1"
+        "2";
+      h3 {
+        grid-area: 2;
+        font-family: $font-2;
+        color: black;
+        font-size: 1.65rem;
+        @include verticalCenter;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      img {
+        grid-area: 1;
+        object-fit: cover;
+        margin: 0 auto;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px 20px 0 0;
+
+        @include verticalCenter;
+      }
+    }
+    .card-4 {
+      margin: auto;
+      grid-area: card-4;
+      cursor: pointer;
+      background: white;
+      border-radius: 20px;
+
+      text-align: center;
+      width: 70%;
+      height: 500px;
+      box-shadow: $shadow;
+      grid-template-rows: 80% 20%;
+      grid-template-areas:
+        "1"
+        "2";
+      h3 {
+        grid-area: 2;
+        font-family: $font-2;
+        color: black;
+        font-size: 1.65rem;
+        @include verticalCenter;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      img {
+        grid-area: 1;
+        object-fit: cover;
+        margin: 0 auto;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px 20px 0 0;
+
+        @include verticalCenter;
+      }
+    }
+    .card-5 {
+      margin: auto;
+      grid-area: card-5;
+      cursor: pointer;
+      background: white;
+      border-radius: 20px;
+
+      text-align: center;
+      width: 70%;
+      height: 500px;
+      box-shadow: $shadow;
+      grid-template-rows: 80% 20%;
+      grid-template-areas:
+        "1"
+        "2";
+      h3 {
+        grid-area: 2;
+        font-family: $font-2;
+        color: black;
+        font-size: 1.65rem;
+        @include verticalCenter;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      img {
+        grid-area: 1;
+        object-fit: cover;
+        margin: 0 auto;
+        width: 100%;
+        height: 80%;
+        border-radius: 20px 20px 0 0;
+
+        @include verticalCenter;
+      }
+    }
+    .card-6 {
+      margin: auto;
+      grid-area: card-6;
+      cursor: pointer;
+      background: white;
+      border-radius: 20px;
+
+      text-align: center;
+      width: 70%;
+      height: 500px;
+      box-shadow: $shadow;
+      grid-template-rows: 80% 20%;
+      grid-template-areas:
+        "1"
+        "2";
+      h3 {
+        grid-area: 2;
+        font-family: $font-2;
+        color: black;
+        font-size: 1.65rem;
+        @include verticalCenter;
+        justify-content: center;
+        margin-top: 30px;
       }
       img {
         grid-area: 1;
