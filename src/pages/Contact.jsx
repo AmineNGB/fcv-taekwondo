@@ -1,11 +1,13 @@
 import React from "react";
 import NavBarXs from "../components/NavBarXs";
+import Map from "../components/Map";
 
 const Contact = () => {
   return (
     <>
       <div className="application">
-        <div>contact</div>
+        <Map />
+
         <NavBarXs />
       </div>
     </>

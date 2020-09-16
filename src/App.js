@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Trainers from "./pages/Trainers";
 import Club from "./pages/Club";
+
 // import Css files
 import "./assets/styles.scss";
 
