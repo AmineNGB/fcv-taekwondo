@@ -1,0 +1,27 @@
+.content-club {
+  width: 100%;
+  h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .story {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    .story-left {
+      width: 400px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .story-right {
+      width: 400px;
+      height: 400px;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

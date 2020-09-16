@@ -4,7 +4,7 @@ import NavBarXs from "../components/NavBarXs";
 const Contact = () => {
   return (
     <>
-      <div className="container">
+      <div className="application">
         <div>contact</div>
         <NavBarXs />
       </div>

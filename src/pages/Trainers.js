@@ -8,6 +8,7 @@ export default class Trainers extends Component {
   state = {
     coach: trainersData,
   };
+
   render() {
     let { coach } = this.state;
 
@@ -22,6 +23,10 @@ export default class Trainers extends Component {
                 <Coach key={item.id} item={item} className={item.cardClass} />
               );
             })}
+          </div>
+          <div className="modal">
+            <img src="" alt="" className="modal-image" />
+            <p className="caption">description</p>
           </div>
           <NavBarXs />
         </div>
